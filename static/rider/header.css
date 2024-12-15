@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+:root {
+  --theam-color: rgb(255, 255, 255);
+  --theam-font-color: rgb(0, 0, 0);
+  --paragraph_font:"Josefin Sans", sans-serif;
+  
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--paragraph_font);
+}
+a{
+    text-decoration: none;
+    color: var(--theam-font-color);
+}
+.header_section{
+    background-color: var(--theam-color) !important;
+    height: 10vh;
+    border-top: 1px solid rgba(0, 0, 0, 0.285);
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.menu_section,.first_menu_part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image_section img{
+    width: 12pc;
+}
+.first_menu_part div,.second_menu_part div{
+    margin: 0 15px;
+}
+
+.profile_icon{
+    border: 1px solid black;
+    border-radius: 50%;
+    line-height: 45px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+}
+
+.menus{
+    font-size: 17px;
+    font-weight: 400;
+    
+}
+.menus a.active {
+    border: 1px solid var(--theam-font-color); 
+    border-radius: 8px;
+    padding: 10px; 
+    
+}
